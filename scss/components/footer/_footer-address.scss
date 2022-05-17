@@ -1,0 +1,44 @@
+.footer-address {
+  width: 231px;
+  margin-right: 70px;
+}
+
+.footer-address__container {
+  font-style: inherit;
+}
+
+.footer-address__list {
+  @extend %list;
+}
+
+.footer-address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-address__geo-link {
+  @extend %link-decor;
+
+  color: $white-text-color;
+  line-height: 1.71;
+
+  @include single-animation(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer-address__link {
+  @extend %link-decor;
+
+  color: $footer-link-text-color;
+  line-height: 1.71;
+
+  @include single-animation(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

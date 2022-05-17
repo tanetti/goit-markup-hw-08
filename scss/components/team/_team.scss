@@ -1,0 +1,11 @@
+.team {
+  @extend .section;
+
+  background-color: $secondary-backround-color;
+}
+
+.team__list {
+  @extend %list;
+
+  display: flex;
+}

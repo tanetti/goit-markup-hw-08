@@ -1,0 +1,52 @@
+// utils
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/global';
+@import './utils/placeholders';
+@import './utils/visually-hidden';
+
+// shared components
+@import './components/shared/section';
+@import './components/shared/container';
+@import './components/shared/title';
+@import './components/shared/image';
+@import './components/shared/logo';
+@import './components/shared/main-button';
+
+// header
+@import './components/header/header';
+@import './components/header/header-navigation';
+@import './components/header/header-contacts';
+
+// hero
+@import './components/hero/hero';
+
+// modal
+@import './components/modal/modal-backdrop';
+@import './components/modal/modal';
+@import './components/modal/close-button';
+@import './components/modal/contact-form';
+//features
+@import './components/features/features';
+
+//work
+@import './components/work/work';
+
+// team
+@import './components/team/team';
+@import './components/team/team-card';
+
+// clients
+@import './components/clients/clients';
+
+// gallery
+@import './components/gallery/gallery-navigation';
+@import './components/gallery/gallery-list';
+@import './components/gallery/gallery-card';
+
+// page-footer
+@import './components/footer/footer';
+@import './components/footer/footer-title';
+@import './components/footer/footer-address';
+@import './components/footer/footer-socials';
+@import './components/footer/footer-subscribe';

@@ -1,0 +1,18 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+
+  width: 100%;
+
+  background-color: $main-backround-color;
+  border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  @extend .container;
+
+  display: flex;
+  align-items: center;
+}

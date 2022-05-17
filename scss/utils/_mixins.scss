@@ -1,0 +1,12 @@
+@mixin single-animation($subject) {
+  transition: $subject $transition-timing $transition-function;
+}
+
+@mixin double-animation($subject_a, $subject_b) {
+  transition: $subject_a $transition-timing $transition-function, $subject_b $transition-timing $transition-function;
+}
+
+@mixin triple-animation($subject_a, $subject_b, $subject_c) {
+  transition: $subject_a $transition-timing $transition-function, $subject_b $transition-timing $transition-function,
+    $subject_c $transition-timing $transition-function;
+}

@@ -1,0 +1,35 @@
+.footer-subscribe {
+  margin-left: auto;
+}
+
+.subscribe-form {
+  display: flex;
+}
+
+.subscribe-form__email {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: $white-text-color;
+  background-color: $footer-backround-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  @include single-animation(border-color);
+
+  &:focus,
+  &:hover {
+    outline: 0;
+    border-color: $white-text-color;
+  }
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}

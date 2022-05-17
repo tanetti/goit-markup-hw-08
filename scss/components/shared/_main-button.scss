@@ -1,0 +1,33 @@
+.main-button {
+  padding: 10px 16px;
+  min-width: 200px;
+
+  background-color: $accent-color;
+  color: $white-text-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+  border-width: 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  @include single-animation(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
+
+.main-button__footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-button__footer-icon {
+  margin-left: 10px;
+}
