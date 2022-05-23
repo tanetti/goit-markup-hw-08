@@ -1,0 +1,89 @@
+.mobile-button {
+  position: relative;
+  z-index: 9;
+
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $main-backround-color;
+  border: none;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-button__container {
+  width: 24px;
+  height: 17px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mobile-button__top-line {
+  width: 100%;
+  height: 3px;
+
+  background-color: $title-text-color;
+
+  transform-origin: center left;
+
+  @include double-animation(transform, background-color);
+
+  .mobile-button:hover &,
+  .mobile-button:focus & {
+    background-color: $accent-color;
+  }
+
+  .mobile-button.is-open & {
+    transform: rotateZ(45deg) translateY(-2px);
+  }
+}
+
+.mobile-button__middle-line {
+  width: 100%;
+  height: 3px;
+
+  background-color: $title-text-color;
+
+  @include double-animation(opacity, background-color);
+
+  .mobile-button:hover &,
+  .mobile-button:focus & {
+    background-color: $accent-color;
+  }
+
+  .mobile-button.is-open & {
+    opacity: 0;
+  }
+}
+
+.mobile-button__bottom-line {
+  width: 100%;
+  height: 3px;
+
+  background-color: $title-text-color;
+
+  transform-origin: center left;
+
+  @include double-animation(transform, background-color);
+
+  .mobile-button:hover &,
+  .mobile-button:focus & {
+    background-color: $accent-color;
+  }
+
+  .mobile-button.is-open & {
+    transform: rotateZ(-45deg) translateY(2px);
+  }
+}

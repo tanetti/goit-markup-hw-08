@@ -21,8 +21,8 @@
     <!-- Хедер -->
     <header class="header">
       <div class="header__container">
+        <a class="logo logo--header_size" lang="en" href="./index.html">Web<span class="logo__header-accent">Studio</span></a>
         <nav class="header-navigation">
-          <a class="logo logo--header_size" lang="en" href="./index.html">Web<span class="logo__header-accent">Studio</span></a>
           <ul class="header-menu">
             <li class="header-menu__item">
               <a class="header-menu__link header-menu__link--current" href="./index.html">Студия</a>
@@ -38,7 +38,7 @@
         <ul class="header-contacts">
           <li class="header-contacts__item">
             <a class="header-contacts__link" href="mailto:info@devstudio.com" lang="en">
-              <svg class="header-contacts__icon" width="16" height="12">
+              <svg class="header-contacts__icon-envelope" width="14" height="10">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -46,13 +46,21 @@
           </li>
           <li class="header-contacts__item">
             <a class="header-contacts__link" href="tel:+380961111111">
-              <svg class="header-contacts__icon" width="10" height="16">
+              <svg class="header-contacts__icon-phone" width="10" height="14">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
+        <div class="header__mobile-menu" data-menu></div>
+        <button class="mobile-button" type="button" aria-label="Переключатель меню" data-menu-button>
+          <div class="mobile-button__container">
+            <div class="mobile-button__top-line"></div>
+            <div class="mobile-button__middle-line"></div>
+            <div class="mobile-button__bottom-line"></div>
+          </div>
+        </button>
       </div>
     </header>
 
@@ -517,5 +525,6 @@
       document.body.style.paddingTop = `${headerHeight}px`;
     </script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

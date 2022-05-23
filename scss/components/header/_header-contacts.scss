@@ -1,12 +1,23 @@
 .header-contacts {
   @extend %list;
 
-  display: flex;
+  display: none;
+
   margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
-.header-contacts__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .header-contacts__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .header-contacts__link {
@@ -14,13 +25,16 @@
 
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   color: $main-text-color;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 
   @include single-animation(color);
 
@@ -28,9 +42,44 @@
   &:focus {
     color: $accent-color;
   }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
-.header-contacts__icon {
+.header-contacts__icon-envelope {
   margin-right: 10px;
   fill: currentColor;
+
+  @media screen and (min-width: 768px) {
+    width: 14px;
+    height: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.header-contacts__icon-phone {
+  margin-right: 10px;
+  fill: currentColor;
+
+  @media screen and (min-width: 768px) {
+    width: 10px;
+    height: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+  }
 }
