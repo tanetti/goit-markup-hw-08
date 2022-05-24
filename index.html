@@ -127,7 +127,7 @@
             <label class="contact-form__field">
               <span class="contact-form__label">Имя</span>
               <span class="contact-form__input-container">
-                <input class="contact-form__input" name="name" type="text" />
+                <input class="contact-form__input" name="name" type="text" required />
                 <svg class="contact-form__icon" width="18" height="18">
                   <use href="./images/icons.svg#person"></use>
                 </svg>
@@ -136,7 +136,7 @@
             <label class="contact-form__field">
               <span class="contact-form__label">Телефон</span>
               <span class="contact-form__input-container">
-                <input class="contact-form__input" name="phone" type="tel" />
+                <input class="contact-form__input" name="phone" type="tel" required />
                 <svg class="contact-form__icon" width="18" height="18">
                   <use href="./images/icons.svg#phone"></use>
                 </svg>
@@ -145,7 +145,7 @@
             <label class="contact-form__field">
               <span class="contact-form__label">Почта</span>
               <span class="contact-form__input-container">
-                <input class="contact-form__input" name="email" type="email" />
+                <input class="contact-form__input" name="email" type="email" required />
                 <svg class="contact-form__icon" width="18" height="18">
                   <use href="./images/icons.svg#email"></use>
                 </svg>
@@ -251,7 +251,7 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team__list">
             <li class="team-card">
-              <img class="image" width="270" height="260" src="./images/team/team-member1.jpg" alt="Член команды" />
+              <img class="team-card__image" width="270" height="260" src="./images/team/team-member1.jpg" alt="Член команды" />
               <div class="team-card__description-container">
                 <h3 class="team-card__name">Игорь Демьяненко</h3>
                 <p class="team-card__position" lang="en">Product Designer</p>
@@ -295,7 +295,7 @@
               </div>
             </li>
             <li class="team-card">
-              <img class="image" width="270" height="260" src="./images/team/team-member2.jpg" alt="Член команды" />
+              <img class="team-card__image" width="270" height="260" src="./images/team/team-member2.jpg" alt="Член команды" />
               <div class="team-card__description-container">
                 <h3 class="team-card__name">Ольга Репина</h3>
                 <p class="team-card__position" lang="en">Frontend Developer</p>
@@ -339,7 +339,7 @@
               </div>
             </li>
             <li class="team-card">
-              <img class="image" width="270" height="260" src="./images/team/team-member3.jpg" alt="Член команды" />
+              <img class="team-card__image" width="270" height="260" src="./images/team/team-member3.jpg" alt="Член команды" />
               <div class="team-card__description-container">
                 <h3 class="team-card__name">Николай Тарасов</h3>
                 <p class="team-card__position" lang="en">Marketing</p>
@@ -383,7 +383,7 @@
               </div>
             </li>
             <li class="team-card">
-              <img class="image" width="270" height="260" src="./images/team/team-member4.jpg" alt="Член команды" />
+              <img class="team-card__image" width="270" height="260" src="./images/team/team-member4.jpg" alt="Член команды" />
               <div class="team-card__description-container">
                 <h3 class="team-card__name">Михаил Ермаков</h3>
                 <p class="team-card__position" lang="en">UI Designer</p>
@@ -547,7 +547,7 @@
           <b class="footer-title">Подпишитесь на рассылку</b>
           <form class="subscribe-form" autocomplete="off">
             <label for="footer-email" class="visually-hidden">Почта</label>
-            <input class="subscribe-form__email" name="email" type="email" id="footer-email" placeholder="E-mail" />
+            <input class="subscribe-form__email" name="email" type="email" id="footer-email" placeholder="E-mail" required />
             <button class="main-button" type="submit">
               <span class="main-button__footer-content">
                 Подписаться
