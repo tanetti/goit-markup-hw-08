@@ -1,17 +1,51 @@
 .clients {
   @extend %list;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .clients__item {
-  width: 170px;
+  width: calc((100% - 30px) / 2);
   height: 92px;
 
+  @media screen and (max-width: 767px) {
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(-n + 4) {
+      margin-bottom: 30px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(-n + 4) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(-n + 3) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+
+    &:nth-child(-n + 3) {
+      margin-bottom: 0;
+    }
+
     &:not(:last-child) {
       margin-right: 30px;
     }

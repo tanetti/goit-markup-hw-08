@@ -57,6 +57,10 @@
   &:focus {
     color: $accent-color;
   }
+
+  &--current {
+    color: $accent-color;
+  }
 }
 
 .mobile-menu__contacts {
@@ -106,6 +110,8 @@
 
   display: flex;
   align-items: center;
+
+  padding-bottom: 60px;
 }
 
 .mobile-menu__socials-item {
@@ -129,7 +135,7 @@
 .mobile-menu__socials-link {
   @extend %link-decor;
 
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.22;
   letter-spacing: 0.02em;
 
