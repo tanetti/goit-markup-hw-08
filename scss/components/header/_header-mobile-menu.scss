@@ -24,7 +24,10 @@
 }
 
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
   height: 100%;
+  // padding-bottom: calc(100vh - 100ch);
 }
 
 .mobile-menu__navigation {
@@ -54,5 +57,89 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+}
+
+.mobile-menu__contacts {
+  @extend %list;
+
+  margin-bottom: 64px;
+}
+
+.mobile-menu__contacts-tel {
+  @extend %link-decor;
+
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+
+  color: $accent-color;
+
+  &:hover,
+  &:focus {
+    color: $title-text-color;
+  }
+
+  @include single-animation(color);
+}
+
+.mobile-menu__contacts-mail {
+  @extend %link-decor;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: $main-text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  @include single-animation(color);
+}
+
+.mobile-menu__socials {
+  @extend %list;
+
+  display: flex;
+  align-items: center;
+}
+
+.mobile-menu__socials-item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child)::after {
+    content: '';
+
+    display: inline-block;
+
+    width: 2px;
+    height: 22px;
+
+    margin: 0 10px;
+
+    background-color: rgba(33, 33, 33, 0.2);
+  }
+}
+
+.mobile-menu__socials-link {
+  @extend %link-decor;
+
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  color: $accent-color;
+
+  @include single-animation(color);
+
+  &:hover,
+  &:focus {
+    color: $title-text-color;
   }
 }
