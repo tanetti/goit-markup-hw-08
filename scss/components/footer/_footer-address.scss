@@ -1,6 +1,17 @@
 .footer-address {
-  width: 231px;
-  margin-right: 70px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    width: 231px;
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-right: 70px;
+  }
 }
 
 .footer-address__container {
@@ -12,7 +23,7 @@
 }
 
 .footer-address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .footer-address__geo-link {

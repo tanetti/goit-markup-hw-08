@@ -1,8 +1,18 @@
 body {
+  padding-top: 60px;
+
   background-color: $main-backround-color;
   color: $main-text-color;
   font-family: $main-font-family;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.03em;
+
+  &.modal-is-open {
+    overflow: hidden;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+  }
 }

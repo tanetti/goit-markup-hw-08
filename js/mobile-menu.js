@@ -4,10 +4,13 @@
     menu: document.querySelector('[data-menu]'),
   };
 
-  refs.menuBtn.addEventListener('click', toggleMenu);
+  refs.menuBtn.addEventListener('click', () => {
+    const expanded = refs.menuBtn.getAttribute('aria-expanded') === 'true' || false;
+    refs.menuBtn.setAttribute('aria-expanded', !expanded);
 
-  function toggleMenu() {
     refs.menuBtn.classList.toggle('is-open');
     refs.menu.classList.toggle('is-open');
-  }
+
+    document.body.classList.toggle('modal-is-open');
+  });
 })();

@@ -10,3 +10,7 @@
   transition: $subject_a $transition-timing $transition-function, $subject_b $transition-timing $transition-function,
     $subject_c $transition-timing $transition-function;
 }
+
+@mixin responsive-font-size($font-size) {
+  font-size: 1vw * ($font-size * 100/480);
+}

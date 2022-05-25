@@ -1,15 +1,11 @@
 .header__mobile-menu {
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 8;
 
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 48px 40px;
 
   background-color: $main-backround-color;
@@ -25,12 +21,18 @@
 
     transform: translateX(0);
   }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .mobile-menu {
   display: flex;
   flex-direction: column;
+  max-width: 400px;
   height: 100%;
+  margin: 0 auto;
 }
 
 .mobile-menu__navigation {
@@ -49,7 +51,7 @@
   @extend %link-decor;
 
   font-weight: 500;
-  font-size: 1vmin * 8.33;
+  @include responsive-font-size(40);
   line-height: 1.18;
   letter-spacing: 0.02em;
 
@@ -65,6 +67,10 @@
   &--current {
     color: $accent-color;
   }
+
+  @media screen and (min-width: 480px) {
+    font-size: 40px;
+  }
 }
 
 .mobile-menu__contacts {
@@ -77,36 +83,44 @@
   @extend %link-decor;
 
   font-weight: 500;
-  font-size: 1vmin * 7.08;
+  @include responsive-font-size(34);
   line-height: 1.18;
   letter-spacing: 0.02em;
 
   color: $accent-color;
+
+  @include single-animation(color);
 
   &:hover,
   &:focus {
     color: $title-text-color;
   }
 
-  @include single-animation(color);
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+  }
 }
 
 .mobile-menu__contacts-mail {
   @extend %link-decor;
 
   font-weight: 500;
-  font-size: 1vmin * 5;
+  @include responsive-font-size(24);
   line-height: 1.17;
   letter-spacing: 0.02em;
 
   color: $main-text-color;
+
+  @include single-animation(color);
 
   &:hover,
   &:focus {
     color: $accent-color;
   }
 
-  @include single-animation(color);
+  @media screen and (min-width: 480px) {
+    font-size: 24px;
+  }
 }
 
 .mobile-menu__socials {
@@ -114,8 +128,6 @@
 
   display: flex;
   align-items: center;
-
-  padding-bottom: 60px;
 }
 
 .mobile-menu__socials-item {
@@ -139,7 +151,7 @@
 .mobile-menu__socials-link {
   @extend %link-decor;
 
-  font-size: 1vmin * 3.75;
+  @include responsive-font-size(18);
   line-height: 1.22;
   letter-spacing: 0.02em;
 
@@ -150,5 +162,9 @@
   &:hover,
   &:focus {
     color: $title-text-color;
+  }
+
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
   }
 }

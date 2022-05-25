@@ -21,14 +21,14 @@
     <!-- Хедер -->
     <header class="header">
       <div class="header__container">
+        <a class="logo logo--header_size" lang="en" href="./index.html">Web<span class="logo__header-accent">Studio</span></a>
         <nav class="header-navigation">
-          <a class="logo logo--header_size" lang="en" href="./index.html">Web<span class="logo__header-accent">Studio</span></a>
           <ul class="header-menu">
             <li class="header-menu__item">
-              <a class="header-menu__link" href="./index.html">Студия</a>
+              <a class="header-menu__link header-menu__link--current" href="./index.html">Студия</a>
             </li>
             <li class="header-menu__item">
-              <a class="header-menu__link header-menu__link--current" href="./portfolio.html">Портфолио</a>
+              <a class="header-menu__link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="header-menu__item">
               <a class="header-menu__link" href="">Контакты</a>
@@ -38,7 +38,7 @@
         <ul class="header-contacts">
           <li class="header-contacts__item">
             <a class="header-contacts__link" href="mailto:info@devstudio.com" lang="en">
-              <svg class="header-contacts__icon" width="16" height="12">
+              <svg class="header-contacts__icon-envelope" width="14" height="10">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -46,13 +46,68 @@
           </li>
           <li class="header-contacts__item">
             <a class="header-contacts__link" href="tel:+380961111111">
-              <svg class="header-contacts__icon" width="10" height="16">
+              <svg class="header-contacts__icon-phone" width="10" height="14">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
+        <div class="header__mobile-menu" id="header__mobile-menu" data-menu>
+          <div class="mobile-menu">
+            <nav class="mobile-menu__navigation">
+              <ul class="mobile-menu__navigation-list">
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link mobile-menu__link--current" href="./index.html">Студия</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="mobile-menu__link" href="">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="mobile-menu__contacts">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__contacts-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__contacts-mail" href="mailto:info@devstudio.com" lang="en">info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu__socials">
+              <li class="mobile-menu__socials-item">
+                <a class="mobile-menu__socials-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" lang="en"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mobile-menu__socials-item">
+                <a class="mobile-menu__socials-link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer" lang="en">Twitter</a>
+              </li>
+              <li class="mobile-menu__socials-item">
+                <a class="mobile-menu__socials-link" href="https://facebook.com/" target="_blank" rel="noopener noreferrer" lang="en">Facebook</a>
+              </li>
+              <li class="mobile-menu__socials-item">
+                <a class="mobile-menu__socials-link" href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" lang="en">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button
+          class="mobile-button"
+          type="button"
+          aria-controls="header__mobile-menu"
+          aria-label="Переключатель меню"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <div class="mobile-button__container">
+            <div class="mobile-button__top-line"></div>
+            <div class="mobile-button__middle-line"></div>
+            <div class="mobile-button__bottom-line"></div>
+          </div>
+        </button>
       </div>
     </header>
 
@@ -316,10 +371,6 @@
         </div>
       </div>
     </footer>
-    <script>
-      const { height: headerHeight } = document.querySelector('.header').getBoundingClientRect();
-      document.body.style.paddingTop = `${headerHeight}px`;
-    </script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
