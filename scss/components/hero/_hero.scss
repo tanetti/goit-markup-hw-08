@@ -35,4 +35,9 @@
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 40px;
+    line-height: 1.36;
+  }
 }

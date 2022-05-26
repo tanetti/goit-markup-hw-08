@@ -10,6 +10,8 @@
 
   background-color: $main-backround-color;
 
+  overflow-y: scroll;
+
   visibility: hidden;
 
   transform: translateX(-100%);
@@ -41,6 +43,8 @@
 
 .mobile-menu__navigation-list {
   @extend %list;
+
+  margin-bottom: 64px;
 }
 
 .mobile-menu__item:not(:last-child) {

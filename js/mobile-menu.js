@@ -11,6 +11,6 @@
     refs.menuBtn.classList.toggle('is-open');
     refs.menu.classList.toggle('is-open');
 
-    document.body.classList.toggle('modal-is-open');
+    document.body.classList.toggle('mobile-menu-is-open');
   });
 })();

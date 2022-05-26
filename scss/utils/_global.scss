@@ -12,6 +12,13 @@ body {
     overflow: hidden;
   }
 
+  &.mobile-menu-is-open {
+    overflow: initial;
+    @media screen and (max-width: 767px) {
+      overflow: hidden;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     padding-top: 81px;
   }
