@@ -1,5 +1,5 @@
 body {
-  padding-top: 61px;
+  padding-top: 60px;
 
   background-color: $main-backround-color;
   color: $main-text-color;
@@ -14,12 +14,12 @@ body {
 
   &.mobile-menu-is-open {
     overflow: initial;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
       overflow: hidden;
     }
   }
 
   @media screen and (min-width: 768px) {
-    padding-top: 81px;
+    padding-top: 80px;
   }
 }

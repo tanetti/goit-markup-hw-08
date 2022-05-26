@@ -1,5 +1,5 @@
 body {
-  padding-top: 61px;
+  padding-top: 60px;
   background-color: #fff;
   color: #757575;
   font-family: "Roboto", sans-serif;
@@ -16,7 +16,7 @@ body.mobile-menu-is-open {
   overflow: initial;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   body.mobile-menu-is-open {
     overflow: hidden;
   }
@@ -24,7 +24,7 @@ body.mobile-menu-is-open {
 
 @media screen and (min-width: 768px) {
   body {
-    padding-top: 81px;
+    padding-top: 80px;
   }
 }
 
@@ -598,21 +598,22 @@ body.mobile-menu-is-open {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header-contacts__link {
-    font-size: 12px;
-    line-height: 1.17;
-  }
-}
-
 .header-contacts__link:hover, .header-contacts__link:focus {
   color: #2196f3;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .header-contacts__link {
-    padding-top: 5px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .header-contacts__link--top {
+    padding-top: 20px;
     padding-bottom: 5px;
+  }
+  .header-contacts__link--bottom {
+    padding-top: 5px;
+    padding-bottom: 20px;
   }
 }
 
@@ -993,7 +994,7 @@ body.mobile-menu-is-open {
           user-select: none;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199.98px) {
   .contact-form__checkbox-label {
     font-size: 12px;
     line-height: 1.17;
@@ -1020,7 +1021,7 @@ body.mobile-menu-is-open {
   width: 100%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .features__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1076,7 +1077,7 @@ body.mobile-menu-is-open {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .features__title {
     text-align: center;
   }
@@ -1163,7 +1164,7 @@ body.mobile-menu-is-open {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .team-card:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1193,7 +1194,7 @@ body.mobile-menu-is-open {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .team-card__image {
     width: 450px;
     height: 460px;
@@ -1296,7 +1297,7 @@ body.mobile-menu-is-open {
   height: 92px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .clients__item:nth-child(odd) {
     margin-right: 30px;
   }
@@ -1431,7 +1432,7 @@ body.mobile-menu-is-open {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.gallery-navigation__button:hover, .gallery-navigation__button:focus {
+.gallery-navigation__button:hover {
   color: #fff;
   background-color: #2196f3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1443,6 +1444,10 @@ body.mobile-menu-is-open {
   background-color: #2196f3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.gallery-navigation__radio:focus + .gallery-navigation__button {
+  outline: 2px solid #212121;
 }
 
 @media screen and (min-width: 768px) {
@@ -1462,13 +1467,13 @@ body.mobile-menu-is-open {
   display: flex;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .gallery-list__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .gallery-list__item {
     width: calc((100% - 30px) / 2);
   }
@@ -1532,8 +1537,9 @@ body.mobile-menu-is-open {
   line-height: 1.55;
   color: #fff;
   background-color: rgba(33, 150, 243, 0.9);
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  overflow-y: scroll;
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);

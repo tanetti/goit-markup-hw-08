@@ -12,13 +12,13 @@
 
   display: flex;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     width: calc((100% - 30px) / 2);
 
     &:nth-child(odd):not(:last-child) {

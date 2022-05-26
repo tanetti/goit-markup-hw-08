@@ -38,7 +38,9 @@
   color: $white-text-color;
   background-color: rgba(33, 150, 243, 0.9);
 
-  transform: translateY(100%);
+  overflow-y: scroll;
+
+  transform: translateY(101%);
 
   @include single-animation(transform);
 

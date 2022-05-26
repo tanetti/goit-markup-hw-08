@@ -31,11 +31,6 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    font-size: 12px;
-    line-height: 1.17;
-  }
-
   @include single-animation(color);
 
   &:hover,
@@ -43,9 +38,19 @@
     color: $accent-color;
   }
 
-  @media screen and (min-width: 768px) {
-    padding-top: 5px;
-    padding-bottom: 5px;
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    font-size: 12px;
+    line-height: 1.17;
+
+    &--top {
+      padding-top: 20px;
+      padding-bottom: 5px;
+    }
+
+    &--bottom {
+      padding-top: 5px;
+      padding-bottom: 20px;
+    }
   }
 
   @media screen and (min-width: 1200px) {
