@@ -231,19 +231,58 @@
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="work__list">
             <li class="work__item">
-              <img class="image" width="370" height="294" src="./images/jobs/job1.jpg" alt="Разработка десктопного приложения" />
+              <picture>
+                <source
+                  srcset="./images/jobs/job1/job1.webp 370w, ./images/jobs/job1/job1@2x.webp 740w, ./images/jobs/job1/job1@3x.webp 1110w"
+                  type="image/webp"
+                  sizes="(min-width: 1200px) 370px"
+                />
+                <img
+                  class="image"
+                  srcset="./images/jobs/job1/job1.jpg 370w, ./images/jobs/job1/job1@2x.jpg 740w, ./images/jobs/job1/job1@3x.jpg 1110w"
+                  sizes="(min-width: 1200px) 370px"
+                  src="./images/jobs/job1/job1.jpg"
+                  alt="Разработка десктопного приложения"
+                />
+              </picture>
               <div class="work__description-container">
                 <p class="work__description-text">Десктопные приложения</p>
               </div>
             </li>
             <li class="work__item">
-              <img class="image" width="370" height="294" src="./images/jobs/job2.jpg" alt="Выбор дизайна мобильного приложения" />
+              <picture>
+                <source
+                  srcset="./images/jobs/job2/job2.webp 370w, ./images/jobs/job2/job2@2x.webp 740w, ./images/jobs/job2/job2@3x.webp 1110w"
+                  type="image/webp"
+                  sizes="(min-width: 1200px) 370px"
+                />
+                <img
+                  class="image"
+                  srcset="./images/jobs/job2/job2.jpg 370w, ./images/jobs/job2/job2@2x.jpg 740w, ./images/jobs/job2/job2@3x.jpg 1110w"
+                  sizes="(min-width: 1200px) 370px"
+                  src="./images/jobs/job2/job2.jpg"
+                  alt="Выбор дизайна мобильного приложения"
+                />
+              </picture>
               <div class="work__description-container">
                 <p class="work__description-text">Мобильные приложения</p>
               </div>
             </li>
             <li class="work__item">
-              <img class="image" width="370" height="294" src="./images/jobs/job3.jpg" alt="Подбор цветовой гаммы" />
+              <picture>
+                <source
+                  srcset="./images/jobs/job3/job3.webp 370w, ./images/jobs/job3/job3@2x.webp 740w, ./images/jobs/job3/job3@3x.webp 1110w"
+                  type="image/webp"
+                  sizes="(min-width: 1200px) 370px"
+                />
+                <img
+                  class="image"
+                  srcset="./images/jobs/job3/job3.jpg 370w, ./images/jobs/job3/job3@2x.jpg 740w, ./images/jobs/job3/job3@3x.jpg 1110w"
+                  sizes="(min-width: 1200px) 370px"
+                  src="./images/jobs/job3/job3.jpg"
+                  alt="Подбор цветовой гаммы"
+                />
+              </picture>
               <div class="work__description-container">
                 <p class="work__description-text">Дизайнерские решения</p>
               </div>
@@ -266,6 +305,7 @@
                     ./images/team/team-member1/team-member1@3x.webp 1350w
                   "
                   type="image/webp"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
                 />
                 <img
                   class="team-card__image"
@@ -276,7 +316,7 @@
                   "
                   src="./images/team/team-member1/team-member1.jpg"
                   alt="Член команды"
-                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
                 />
               </picture>
               <div class="team-card__description-container">
@@ -322,7 +362,28 @@
               </div>
             </li>
             <li class="team-card">
-              <img class="team-card__image" width="270" height="260" src="./images/team/team-member2.jpg" alt="Член команды" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-member2/team-member2.webp     450w,
+                    ./images/team/team-member2/team-member2@2x.webp  900w,
+                    ./images/team/team-member2/team-member2@3x.webp 1350w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                />
+                <img
+                  class="team-card__image"
+                  srcset="
+                    ./images/team/team-member2/team-member2.jpg     450w,
+                    ./images/team/team-member2/team-member2@2x.jpg  900w,
+                    ./images/team/team-member2/team-member2@3x.jpg 1350w
+                  "
+                  src="./images/team/team-member2/team-member2.jpg"
+                  alt="Член команды"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                />
+              </picture>
               <div class="team-card__description-container">
                 <h3 class="team-card__name">Ольга Репина</h3>
                 <p class="team-card__position" lang="en">Frontend Developer</p>
@@ -366,7 +427,28 @@
               </div>
             </li>
             <li class="team-card">
-              <img class="team-card__image" width="270" height="260" src="./images/team/team-member3.jpg" alt="Член команды" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-member3/team-member3.webp     450w,
+                    ./images/team/team-member3/team-member3@2x.webp  900w,
+                    ./images/team/team-member3/team-member3@3x.webp 1350w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                />
+                <img
+                  class="team-card__image"
+                  srcset="
+                    ./images/team/team-member3/team-member3.jpg     450w,
+                    ./images/team/team-member3/team-member3@2x.jpg  900w,
+                    ./images/team/team-member3/team-member3@3x.jpg 1350w
+                  "
+                  src="./images/team/team-member3/team-member3.jpg"
+                  alt="Член команды"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                />
+              </picture>
               <div class="team-card__description-container">
                 <h3 class="team-card__name">Николай Тарасов</h3>
                 <p class="team-card__position" lang="en">Marketing</p>
@@ -410,7 +492,28 @@
               </div>
             </li>
             <li class="team-card">
-              <img class="team-card__image" width="270" height="260" src="./images/team/team-member4.jpg" alt="Член команды" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/team-member4/team-member4.webp     450w,
+                    ./images/team/team-member4/team-member4@2x.webp  900w,
+                    ./images/team/team-member4/team-member4@3x.webp 1350w
+                  "
+                  type="image/webp"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                />
+                <img
+                  class="team-card__image"
+                  srcset="
+                    ./images/team/team-member4/team-member4.jpg     450w,
+                    ./images/team/team-member4/team-member4@2x.jpg  900w,
+                    ./images/team/team-member4/team-member4@3x.jpg 1350w
+                  "
+                  src="./images/team/team-member4/team-member4.jpg"
+                  alt="Член команды"
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+                />
+              </picture>
               <div class="team-card__description-container">
                 <h3 class="team-card__name">Михаил Ермаков</h3>
                 <p class="team-card__position" lang="en">UI Designer</p>
