@@ -1271,6 +1271,12 @@ body.mobile-menu-is-open {
   padding: 30px 32px;
 }
 
+@media screen and (max-width: 1199.98px) {
+  .team-card__description-container {
+    padding-bottom: 24px;
+  }
+}
+
 .team-card__name {
   margin-bottom: 10px;
   color: #212121;

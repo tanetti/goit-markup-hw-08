@@ -59,6 +59,10 @@
 
 .team-card__description-container {
   padding: 30px 32px;
+
+  @media screen and (max-width: 1199.98px) {
+    padding-bottom: 24px;
+  }
 }
 
 .team-card__name {
