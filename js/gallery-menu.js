@@ -1,10 +1,10 @@
 (() => {
   const refs = {
-    aBtn: document.querySelector('[a-btn]'),
-    bBtn: document.querySelector('[b-btn]'),
-    cBtn: document.querySelector('[c-btn]'),
-    dBtn: document.querySelector('[d-btn]'),
-    eBtn: document.querySelector('[e-btn]'),
+    aBtn: document.querySelector('[data-a-btn]'),
+    bBtn: document.querySelector('[data-b-btn]'),
+    cBtn: document.querySelector('[data-c-btn]'),
+    dBtn: document.querySelector('[data-d-btn]'),
+    eBtn: document.querySelector('[data-e-btn]'),
   };
 
   refs.aBtn.addEventListener('click', toggleChecked_a);
