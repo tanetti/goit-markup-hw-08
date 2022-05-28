@@ -14,6 +14,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.03em;
+  overflow-y: scroll;
 }
 
 body.modal-is-open {
@@ -1533,15 +1534,33 @@ body.mobile-menu-is-open {
   }
 }
 
+.gallery-list__wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
 .gallery-list__item {
+  position: relative;
+  z-index: -1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gallery-list__item--hidden {
-  display: none;
+  position: absolute;
+  z-index: -2;
+  opacity: 0;
+  -webkit-transform: translatey(-100%);
+          transform: translatey(-100%);
+  visibility: hidden;
+  -webkit-transition: none;
+  transition: none;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -1623,6 +1642,7 @@ body.mobile-menu-is-open {
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 20px 24px;
+  background-color: #fff;
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
   border-bottom: 1px solid #eee;

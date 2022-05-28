@@ -12,6 +12,8 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 
+  overflow-y: scroll;
+
   &.modal-is-open {
     overflow: hidden;
   }

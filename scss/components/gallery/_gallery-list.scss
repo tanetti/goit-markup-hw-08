@@ -8,14 +8,31 @@
   }
 }
 
+.gallery-list__wrapper {
+  position: relative;
+
+  overflow: hidden;
+}
+
 .gallery-list__item {
+  position: relative;
+  z-index: -1;
+
   display: flex;
 
   width: 100%;
 
   &--hidden {
-    display: none;
+    position: absolute;
+    z-index: -2;
+    opacity: 0;
+    transform: translatey(-100%);
+    visibility: hidden;
+
+    transition: none;
   }
+
+  @include triple-animation(opacity, transform, visibility);
 
   @media screen and (max-width: 767.98px) {
     &:not(:last-child) {
