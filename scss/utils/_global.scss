@@ -1,5 +1,9 @@
 body {
+  display: flex;
+  flex-direction: column;
+
   padding-top: 60px;
+  min-height: 100vh;
 
   background-color: $main-backround-color;
   color: $main-text-color;
