@@ -93,15 +93,15 @@
   }
 
   function toggleChecked_all() {
-    hideAll();
-    setTimeout(showAll, 10);
+    if (refs.allBtn.hasAttribute('checked') === false) {
+      checkedBtn = document.querySelector('[checked]');
+      checkedBtn.toggleAttribute('checked');
 
-    checkedBtn = document.querySelector('[checked]');
-    checkedBtn.toggleAttribute('checked');
-    checkedBtn.toggleAttribute('disabled');
+      refs.allBtn.toggleAttribute('checked');
 
-    refs.allBtn.toggleAttribute('checked');
-    refs.allBtn.toggleAttribute('disabled');
+      hideAll();
+      setTimeout(showAll, 10);
+    }
   }
 
   function toggleChecked_web() {
@@ -114,15 +114,15 @@
       }
     }
 
-    hideAll();
-    setTimeout(showWeb, 10);
+    if (refs.webBtn.hasAttribute('checked') === false) {
+      checkedBtn = document.querySelector('[checked]');
+      checkedBtn.toggleAttribute('checked');
 
-    checkedBtn = document.querySelector('[checked]');
-    checkedBtn.toggleAttribute('checked');
-    checkedBtn.toggleAttribute('disabled');
+      refs.webBtn.toggleAttribute('checked');
 
-    refs.webBtn.toggleAttribute('checked');
-    refs.webBtn.toggleAttribute('disabled');
+      hideAll();
+      setTimeout(showWeb, 10);
+    }
   }
 
   function toggleChecked_app() {
@@ -138,15 +138,15 @@
       }
     }
 
-    hideAll();
-    setTimeout(showApp, 10);
+    if (refs.appBtn.hasAttribute('checked') === false) {
+      checkedBtn = document.querySelector('[checked]');
+      checkedBtn.toggleAttribute('checked');
 
-    checkedBtn = document.querySelector('[checked]');
-    checkedBtn.toggleAttribute('checked');
-    checkedBtn.toggleAttribute('disabled');
+      refs.appBtn.toggleAttribute('checked');
 
-    refs.appBtn.toggleAttribute('checked');
-    refs.appBtn.toggleAttribute('disabled');
+      hideAll();
+      setTimeout(showApp, 10);
+    }
   }
 
   function toggleChecked_design() {
@@ -159,15 +159,15 @@
       }
     }
 
-    hideAll();
-    setTimeout(showDesign, 10);
+    if (refs.designBtn.hasAttribute('checked') === false) {
+      checkedBtn = document.querySelector('[checked]');
+      checkedBtn.toggleAttribute('checked');
 
-    checkedBtn = document.querySelector('[checked]');
-    checkedBtn.toggleAttribute('checked');
-    checkedBtn.toggleAttribute('disabled');
+      refs.designBtn.toggleAttribute('checked');
 
-    refs.designBtn.toggleAttribute('checked');
-    refs.designBtn.toggleAttribute('disabled');
+      hideAll();
+      setTimeout(showDesign, 10);
+    }
   }
 
   function toggleChecked_marketing() {
@@ -180,14 +180,14 @@
       }
     }
 
-    hideAll();
-    setTimeout(showMarketing, 10);
+    if (refs.marketingBtn.hasAttribute('checked') === false) {
+      checkedBtn = document.querySelector('[checked]');
+      checkedBtn.toggleAttribute('checked');
 
-    checkedBtn = document.querySelector('[checked]');
-    checkedBtn.toggleAttribute('checked');
-    checkedBtn.toggleAttribute('disabled');
+      refs.marketingBtn.toggleAttribute('checked');
 
-    refs.marketingBtn.toggleAttribute('checked');
-    refs.marketingBtn.toggleAttribute('disabled');
+      hideAll();
+      setTimeout(showMarketing, 10);
+    }
   }
 })();
