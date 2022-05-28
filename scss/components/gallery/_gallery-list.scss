@@ -1,3 +1,9 @@
+.gallery-list-wrapper {
+  position: relative;
+
+  overflow: hidden;
+}
+
 .gallery-list {
   @extend %list;
 
@@ -6,12 +12,6 @@
     flex-wrap: wrap;
     margin: -15px;
   }
-}
-
-.gallery-list__wrapper {
-  position: relative;
-
-  overflow: hidden;
 }
 
 .gallery-list__item {
