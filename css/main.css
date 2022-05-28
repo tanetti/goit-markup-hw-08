@@ -1524,7 +1524,6 @@ body.mobile-menu-is-open {
 }
 
 .gallery-list-wrapper {
-  position: relative;
   min-height: 400px;
   overflow: hidden;
 }
@@ -1541,8 +1540,6 @@ body.mobile-menu-is-open {
 }
 
 .gallery-list__item {
-  position: relative;
-  z-index: -1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1555,7 +1552,6 @@ body.mobile-menu-is-open {
 
 .gallery-list__item--hidden {
   position: absolute;
-  z-index: -2;
   opacity: 0;
   -webkit-transform: translatey(-100%);
           transform: translatey(-100%);

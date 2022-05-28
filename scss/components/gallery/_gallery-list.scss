@@ -1,6 +1,4 @@
 .gallery-list-wrapper {
-  position: relative;
-
   min-height: 400px;
 
   overflow: hidden;
@@ -17,16 +15,12 @@
 }
 
 .gallery-list__item {
-  position: relative;
-  z-index: -1;
-
   display: flex;
 
   width: 100%;
 
   &--hidden {
     position: absolute;
-    z-index: -2;
     opacity: 0;
     transform: translatey(-100%);
     visibility: hidden;
