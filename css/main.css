@@ -1525,6 +1525,7 @@ body.mobile-menu-is-open {
 
 .gallery-list-wrapper {
   position: relative;
+  min-height: 400px;
   overflow: hidden;
 }
 
