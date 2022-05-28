@@ -4,13 +4,18 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
 .gallery-list__item {
+  display: flex;
+
   width: 100%;
 
-  display: flex;
+  &--hidden {
+    display: none;
+  }
 
   @media screen and (max-width: 767.98px) {
     &:not(:last-child) {
@@ -18,27 +23,12 @@
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-    width: calc((100% - 30px) / 2);
-
-    &:nth-child(odd):not(:last-child) {
-      margin-right: 30px;
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 60px) / 3);
-
-    &:not(:nth-child(3n)) {
-      margin-right: 30px;
-    }
-
-    &:not(:nth-last-child(-n + 3)) {
-      margin-bottom: 30px;
-    }
+    width: calc((100% - 90px) / 3);
   }
 }
