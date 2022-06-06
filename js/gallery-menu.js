@@ -94,7 +94,7 @@
 
   function toggleChecked_all() {
     if (refs.allBtn.hasAttribute('checked') === false) {
-      checkedBtn = document.querySelector('[checked]');
+      const checkedBtn = document.querySelector('[checked]');
       checkedBtn.toggleAttribute('checked');
 
       refs.allBtn.toggleAttribute('checked');
@@ -115,7 +115,7 @@
     }
 
     if (refs.webBtn.hasAttribute('checked') === false) {
-      checkedBtn = document.querySelector('[checked]');
+      const checkedBtn = document.querySelector('[checked]');
       checkedBtn.toggleAttribute('checked');
 
       refs.webBtn.toggleAttribute('checked');
@@ -139,7 +139,7 @@
     }
 
     if (refs.appBtn.hasAttribute('checked') === false) {
-      checkedBtn = document.querySelector('[checked]');
+      const checkedBtn = document.querySelector('[checked]');
       checkedBtn.toggleAttribute('checked');
 
       refs.appBtn.toggleAttribute('checked');
@@ -160,7 +160,7 @@
     }
 
     if (refs.designBtn.hasAttribute('checked') === false) {
-      checkedBtn = document.querySelector('[checked]');
+      const checkedBtn = document.querySelector('[checked]');
       checkedBtn.toggleAttribute('checked');
 
       refs.designBtn.toggleAttribute('checked');
@@ -181,7 +181,7 @@
     }
 
     if (refs.marketingBtn.hasAttribute('checked') === false) {
-      checkedBtn = document.querySelector('[checked]');
+      const checkedBtn = document.querySelector('[checked]');
       checkedBtn.toggleAttribute('checked');
 
       refs.marketingBtn.toggleAttribute('checked');
